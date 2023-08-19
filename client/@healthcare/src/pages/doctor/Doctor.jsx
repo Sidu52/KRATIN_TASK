@@ -8,7 +8,7 @@ function Doctor() {
 
     useEffect(() => {
         async function fetchdata() {
-            const response = await axios.get('http://localhost:9000/doctor')
+            const response = await axios.get('https://kratin-task-backend.onrender.com/doctor')
             if (!response.data) {
                 console.log(response.data.message)
             } else {

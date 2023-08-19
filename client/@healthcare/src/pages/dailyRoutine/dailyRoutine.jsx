@@ -23,7 +23,7 @@ export default function dailyRoutine() {
         async function fetchData() {
             try {
                 const response = await axios.get(
-                    `http://localhost:9000/tasks/${storedUser.id}`,
+                    `https://kratin-task-backend.onrender.com/tasks/${storedUser.id}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`
@@ -53,7 +53,7 @@ export default function dailyRoutine() {
         //Change State in Database
         try {
             const response = await axios.post(
-                "http://localhost:9000/updateTask",
+                "https://kratin-task-backend.onrender.com/updateTask",
 
                 {
                     id: id,
@@ -76,7 +76,7 @@ export default function dailyRoutine() {
         event.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:9000/addtask",
+                "https://kratin-task-backend.onrender.com/addtask",
                 {
                     ...form,
                     id: storedUser.id // Include the user ID in the request payload

@@ -16,7 +16,7 @@ const RegisterUser = () => {
         event.preventDefault();
         try {
             const response = await axios.post(
-                "http://localhost:9000/register",
+                "https://kratin-task-backend.onrender.com/register",
                 form
             );
             if (response.data) {

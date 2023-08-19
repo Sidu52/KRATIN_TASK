@@ -18,7 +18,7 @@ const Appointment = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:9000/appointment", form);
+            const response = await axios.post("https://kratin-task-backend.onrender.com/appointment", form);
             toast.warn(response.data.message)
         } catch (error) {
             console.error("Error Appointment Booking:", error);

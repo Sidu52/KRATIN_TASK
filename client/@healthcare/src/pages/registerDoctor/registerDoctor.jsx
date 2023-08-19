@@ -19,7 +19,7 @@ const registerDoctor = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:9000/doctor/register",
+                "https://kratin-task-backend.onrender.com/doctor/register",
                 form
             );
             if (response.data) {
