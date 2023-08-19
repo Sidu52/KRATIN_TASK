@@ -1,0 +1,29 @@
+.client {
+    background: #ffff;
+
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        padding: 25px;
+    }
+
+    .client_review {
+        display: flex;
+        justify-content: space-around;
+
+        .review {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            width: 250px;
+            padding: 20px;
+
+            p {
+                font-size: 1.3rem;
+            }
+        }
+
+    }
+}

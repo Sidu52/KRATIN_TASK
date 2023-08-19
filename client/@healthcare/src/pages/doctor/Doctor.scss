@@ -1,0 +1,77 @@
+.doctor {
+    background: #fff;
+
+    h3 {
+        text-align: center;
+        padding: 50px;
+        font-size: 3rem;
+    }
+
+    .cart_contianer {
+        display: flex;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin: 2%;
+        margin-bottom: 0;
+
+
+        .doctor_cart {
+            width: 340px;
+            height: 400px;
+            position: relative;
+            transition: all 0.3s linear;
+            overflow: hidden;
+
+            img {
+                width: 340px;
+                height: 400px;
+                transition: all 0.3s linear;
+
+            }
+
+            .doctor_data {
+                background: #313544cc;
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 40px;
+                padding: 0 10px;
+                overflow: hidden;
+                transition: height 0.3s linear;
+
+                h4 {
+                    font-family: 'Roboto Mono', monospace;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    padding: 10px;
+                }
+
+                p {
+                    font-family: 'Roboto Mono', monospace;
+                    font-weight: 200;
+                    font-size: 1.2rem;
+                    color: white;
+                }
+
+            }
+
+            &:hover {
+                img {
+                    filter: brightness(1.4);
+                }
+
+
+                .doctor_data {
+                    height: 100px;
+
+                    transition: height 0.3s linear;
+
+                }
+
+            }
+        }
+    }
+}
