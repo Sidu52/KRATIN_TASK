@@ -3,8 +3,8 @@ const mysql = require('mysql2');
 
 //Create a MySql connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
+    host: process.env.MYSQL_HOST,
+    user: process.env.MYSQL_USER,
     password: process.env.MYSQL_ROOT_PASSWORD,
     database: "healthapk",
 })
